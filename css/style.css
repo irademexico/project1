@@ -15,7 +15,7 @@ body {
     font-family: "segoe-ui", "open-sans", tahoma, arial;
     
 }
-h1 {
+h1, h2 {
     margin: 25px auto 0;
     text-align: center;
     text-transform: uppercase;

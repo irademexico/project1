@@ -11,12 +11,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
 </head>
 <body>
     <section class="principal">
 
-        <h1 class="title">Busqueda de Cursos</h1>
+        <h1 class="title">Busqueda en tiempo real</h1>
+        <h2>PHP - mySql - JQuery - Ajax</h2>
 
         <div class="form">
             <label for="box_search">Buscar</label>
@@ -25,14 +26,12 @@
 
         <div id="dataContainer">
             
-            <div class="dataTable">
-        
-            </div>
+            
         </div>
 
     </section>
-
-    <script type="text/javascript" src="main.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>

@@ -15,7 +15,8 @@ function buscar_datos(consulta){
 	});
 }
 
-$(document).on('keyup','#boxSearch', function(){
+$('#box_search').on('keyup', function(){
+	console.log("activo keyup");
 	var valor = $(this).val();
 	if (valor != "") {
 		buscar_datos(valor);

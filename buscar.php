@@ -11,14 +11,12 @@
 
     $salida = "";
 
-    $query = "SELECT * FROM cursos WHERE courseName NOT LIKE '' ORDER By courseName ASC LIMIT 10";
+    $query = "SELECT * FROM cursos  ORDER By courseName ASC LIMIT 10";
 
     if (isset($_POST['consulta'])) {
 			$q = $conn->real_escape_string($_POST['consulta']);
-		
-    	$query = "SELECT * FROM cursos WHERE  courseName LIKE '%$q%' OR courseDescription LIKE '%$q%' OR courseLevel LIKE '%$q%' OR courseCost LIKE '%$q%' ";
+      $query = "SELECT * FROM cursos WHERE  courseName LIKE '%$q%' OR courseDescription LIKE '%$q%' OR courseLevel LIKE '%$q%' OR courseCost LIKE '%$q%' ";
     }
-
 		$resultado = $conn->query($query);
         $rows=mysqli_num_rows($resultado);
        
